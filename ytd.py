@@ -15,7 +15,7 @@ def banner():
       |__|    \033[96m                   Youtube Downloader\033[91m
       /||\    \033[96m                   Author > RobinHood\033[91m
      //||\\   \033[96m              https://github.com/The-Robin-Hood\033[91m
-    // || \\               
+    // || \\  \033[96m                         Version: 0.1 \033[91m             
  __//__||__\\__
 '--------------' '''+reset)
 
