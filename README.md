@@ -1,4 +1,4 @@
-# YoutubeDownloader
+# YouTubeDownloader
 ### Description
 - YTD is a python program that helps to download youtube video 
 
