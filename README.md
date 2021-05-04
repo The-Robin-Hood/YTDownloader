@@ -15,10 +15,11 @@ Developers assume no liability and are not responsible for any misuse or damage 
 1. Python3
 2. ffmpeg-python
 3. pytube
- 
- # Usage:
+
+# Usage:
 1. Download the Zip and Extract it (or) 
    git clone https://github.com/The-Robin-Hood/YTDownloader
 2. cd YTDownloader
 3. pip install -r requirements.txt
-4. python yt.py
+4. if Linux : apt install ffmeg
+5. python ytd.py
