@@ -149,7 +149,15 @@ def again():
         print(red+"\n Invalid Option \n"+reset)
 
 
-
+def is_tool(name):
+    import subprocess
+    try:
+        devnull = open(os.devnull)
+        subprocess.Popen([name], stdout=devnull, stderr=devnull).communicate()
+    except OSError as e:
+        if e.errno == 2:
+            return False
+    return True
 
 # initiating variables
 reset='\033[0m'
@@ -170,7 +178,11 @@ try:
 except:
     print(red + "\nInstall Required Modules ")
     print("pip install -r requirements.txt\n" +reset)
-    sys.exit()    
+    sys.exit()   
+
+if(not is_tool("ffmpeg")):
+    print(red+"\nFFMPEG not installed"+reset)
+    sys.exit()
  
 
 # Program starts 
